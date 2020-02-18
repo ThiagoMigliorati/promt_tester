@@ -1,8 +1,4 @@
 # [Vue Dashboard ArchitectUI](https://vue-dashboard-architectui-free.admin-dashboards.com)
-Thiago
-<br / >
-yarn serve 
-<br />
 As a base framework, ArchitectUI Vue is powered by @vue/cli version 3.4.1 and Bootstrap 4 Vue implementation.
 It contains 15 handpicked Vue widgets and components that are perfectly integrated with each other in order to create a common design language.
 In order to use this Vue theme you’ll need at least basic coding skills. Don’t worry, the theme has pretty straight forward coding and uses Vue Router for the navigation links.
