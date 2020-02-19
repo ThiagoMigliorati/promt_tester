@@ -197,6 +197,21 @@
                         title: 'ChartJS',
                         href: '/charts/chartjs',
                     },
+                     {
+                        header: true,
+                        title: 'News',
+                    },
+                    {
+                        icon: 'pe-7s-graph2',
+                        title: 'Blank',
+                        href: '/news/blank',
+                    },
+                    {
+                        icon: 'pe-7s-graph2',
+                        title: 'Portfolio Charts',
+                        href: '/news/portfolio',
+                    },
+                    
                 ],
                 collapsed: true,
 

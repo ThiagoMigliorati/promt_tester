@@ -159,5 +159,20 @@ export default new Router({
             name: 'chartjs',
             component: () => import('../DemoPages/Charts/Chartjs.vue'),
         },
+        // News
+
+        {
+            path: '/news/blank',
+            name: 'chartjs',
+            component: () => import('../DemoPages/News/blank.vue'),
+        },
+
+        {
+            path: '/news/portfolio',
+            name: 'chartjs',
+            component: () => import('../DemoPages/News/portfoliocharts.vue'),
+        },
+
+
     ]
 })
