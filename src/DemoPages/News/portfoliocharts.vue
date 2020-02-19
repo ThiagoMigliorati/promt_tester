@@ -8,7 +8,7 @@
 
           <b-col md="6">
             <b-card title="Line Graph" class="main-card mb-3">
-               <highcharts :options="chartOptionsTwo"></highcharts>
+              <chartone :values="valores"></chartone>
             </b-card>
           </b-col>
 
@@ -62,7 +62,7 @@
 
           <b-col md="6">
             <b-card title="Column Horizontal" class="main-card mb-3">
-              <highcharts :options="chartOptionsEight"></highcharts>
+              <highcharts :options="chartOptionsSeven"></highcharts>
             </b-card>
           </b-col>
 
@@ -77,6 +77,8 @@
 
   import PageTitle from "../../Layout/Components/PageTitle.vue";
 
+  import chartone from "../../Components/blank.vue";
+
   import {Chart} from 'highcharts-vue'
 
   import Highcharts from  "highcharts";
@@ -90,12 +92,15 @@
   export default {
     components: {
       PageTitle,
-      highcharts: Chart 
+      highcharts: Chart,
+      chartone
     },
     data: () => ({
       heading: 'Portfolio Charts',
       subheading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
       icon: 'pe-7s-voicemail icon-gradient bg-arielle-smile',
+
+      valores: [1,1,1,1,1,1,2,2,3],
 
       chartOptionsOne: {
 
@@ -163,18 +168,6 @@
         }]
 
        
-      },
-
-      chartOptionsTwo: {
-        chart: {
-          type: 'spline'
-        },
-        title: {
-          text: 'Entire title'
-        },
-        series: [{
-          data: [10, 0, 8, 2, 6, 4, 5, 5]
-        }]
       },
 
       chartOptionsThree: {
@@ -287,7 +280,17 @@
 
 
     }),
-    
+    methods: {
+        update: function(){
+            this.valores = [1,1,2,2]
+        }
+    },
+    mounted: function(){
+      
+      
+     this.update()
+        
+    }
 
 
   }
